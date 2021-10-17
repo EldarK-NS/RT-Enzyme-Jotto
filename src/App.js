@@ -10,6 +10,7 @@ function App() {
       <Congrats success={true} />
       <GuessedWords
         guessedWords={[{ guessedWord: "train", letterMatchCount: 3 }]}
+        // guessedWords={[]}
       />
     </div>
   );
