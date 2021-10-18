@@ -30,3 +30,25 @@ describe("state conrolled input field", () => {
     expect(mockSetCurrentGuess).toHaveBeenCalledWith("train");
   });
 });
+
+//TODO: этот метод тестирования useState если мы проводим деструктуризацию хука в импорте
+//!mock entire module for destructuring useState
+// const mockSetCurrentGuess = jest.fn();
+// jest.mock("react", () => ({
+//   ...jest.requireActual("react"),
+//   useState: (initialState) => [initialState, mockSetCurrentGuess],
+// }));
+
+//!for destructurng useState
+// describe("state conrolled input field", () => {
+//   test("state updates with value of input box upon change", () => {
+
+//     const wrapper = setup();
+//     const inputBox = findByTestAttr(wrapper, "input-box");
+
+//     const mockEvent = { target: { value: "train" } };
+//     inputBox.simulate("change", mockEvent);
+
+//     expect(mockSetCurrentGuess).toHaveBeenCalledWith("train");
+//   });
+// });
