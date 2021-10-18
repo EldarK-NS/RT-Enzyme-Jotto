@@ -29,12 +29,11 @@ const GuessedWords = (props) => {
       </div>
     );
   }
-
   return <div data-test='component-guessed-words'>{contents}</div>;
 };
 
 GuessedWords.propTypes = {
-  GuessedWords: PropTypes.arrayOf(
+  guessedWords: PropTypes.arrayOf(
     PropTypes.shape({
       guessedWord: PropTypes.string.isRequired,
       letterMatchCount: PropTypes.number.isRequired,
