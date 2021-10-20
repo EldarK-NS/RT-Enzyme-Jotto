@@ -2,7 +2,7 @@
  * @function successReducer
  * @param {array} state - array of guessed words
  * @param {array} action - action to be reduced
- * @retutn {bollean} new success state
+ * @return {bollean} new success state
  */
 
 export default (state, action) => {
